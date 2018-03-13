@@ -1,0 +1,23 @@
+{
+  "name": "webpack-docschina",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nmwei/webpack-docschina.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nmwei/webpack-docschina/issues"
+  },
+  "homepage": "https://github.com/nmwei/webpack-docschina#readme",
+  "devDependencies": {
+    "webpack": "^4.1.1"
+  }
+}
