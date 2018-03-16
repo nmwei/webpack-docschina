@@ -1,8 +1,12 @@
 /**
  * Created by nimengwei on 2018/3/13.
  */
-import _ from 'lodash';
 import { cube } from './math.js';
+
+
+if (process.env.NODE_ENV !== 'production') {
+    console.log('Looks like we are in development mode!');
+}
 
 function component() {
     var element = document.createElement('pre');
