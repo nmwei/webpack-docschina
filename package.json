@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/nmwei/webpack-docschina#readme",
   "devDependencies": {
+    "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^0.28.10",
     "file-loader": "^1.1.11",
     "html-webpack-plugin": "^3.0.6",
