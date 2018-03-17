@@ -2,15 +2,17 @@
  * Created by nimengwei on 2018/3/13.
  */
 
-function component() {
-    var element = document.createElement('pre');
-    element.innerHTML = [
-        'Hello webpack!',
-        '5 cubed is equal to '
-    ].join('\n\n');
+function getComponent() {
+    return import(/* webpackChunkName: "lodash" */'lodash').then(_ => {
 
-    return element;
+        var element = document.createElement('div');
+        console.log(_.join);
+        element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+        return element;
+    }).catch(error => console.log(error));
 }
 
-document.body.appendChild(component());
+getComponent().then(component => {
+    document.body.appendChild(component);
+})
 
